@@ -1,23 +1,52 @@
 {
   "settings": {
-    "name": "catling.tv",
-    "currentPage": "page1.html",
+    "name": "internet.maxsus",
+    "currentPage": "index.html",
     "theme": {
-      "name": "purity",
-      "title": "PurityM",
-      "styling": {}
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
     },
     "path": "@PROJECT_PATH@",
-    "versionFirst": "4.9.7",
-    "siteFonts": [],
-    "favicon": "",
-    "noImageResize": "",
-    "google-analytics": "",
-    "siteUrl": "undefined",
-    "cookiesAlert": "",
-    "gdpr": "",
-    "uniqCompNum": 74,
-    "versionPublish": "4.9.7",
+    "versionFirst": "4.12.3",
+    "siteFonts": [
+      {
+        "css": "'Rubik', sans-serif",
+        "name": "Rubik",
+        "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/0.png",
+    "imageResize": true,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 10,
+    "versionPublish": "4.12.3",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -32,2396 +61,295 @@
       },
       "components": [
         {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_anchor": "ext_menu-0",
+          "alias": false,
           "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
             }
-          }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    ИНТЕРНЕТ КЛУБ \"MAXSUS\"</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    beta 0.29</h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Интро в полную ширину с регулируемой высотой, фоновым изображением и наложением цвета. Щелкните, чтобы изменить любой текст или его стиль.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">ПОДРОБНЕЕ</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rW9E0aPql7",
+          "_anchor": "header16-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
-          "_params": {
-            "showTitle": true,
-            "showText": false,
-            "showButtons": true,
-            "showArrow": true,
-            "contentAlign": "center",
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/photo-1.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
-            "bgColor": "#fff8e0",
-            "bgVideoRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            "overlay": false,
-            "overlayColor": "#ffffff",
-            "overlayOpacity": 0.5
-          },
-          "title": "catling.tv<br>кошечка.тв<br>",
-          "text": "Click any text to edit or style it. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. <br> Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"page1.html\" data-toolbar=\"-mbrBtnMove\">СМОТРЕТЬ</a> ",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "header1",
-          "_anchor": "header1-1"
-        },
-        {
-          "_params": {
-            "token": "",
-            "showTitle": true,
-            "layoutGridRadio": true,
-            "imagesPerRowGrid": 4,
-            "rows": 2,
-            "showMoreButton": true,
-            "layoutSliderRadio": false,
-            "imagesPerRowSlider": 4,
-            "spacing": 5,
-            "fullWidth": false,
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColorRadio": false,
-            "bgColor": "#fafafa",
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/instagram-background.jpg",
-            "overlay": false,
-            "overlayColor": "#efefef",
-            "overlayOpacity": 0.6
-          },
-          "title": "Instagram Feed",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-md btn-primary\" href=\"#\">Show more</a>",
-          "display2": "display-2",
-          "display4": "display-4",
-          "alias": "instagram-feed",
-          "_tags": [
-            "Расширения"
-          ],
-          "_name": "instagram-feed-block",
-          "_anchor": "instagram-feed-block-1w"
-        },
-        {
-          "_params": {
-            "showTitle": true,
-            "paddingTop": "4",
-            "paddingBottom": "2",
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/photo-3.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
-            "bgColor": "#fff",
-            "overlay": true,
-            "overlayColor": "#222",
-            "overlayOpacity": 0.5
-          },
-          "title": "НАПИСАТЬ АДМИНИСТРАТОРУ",
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-secondary-outline\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">НАПИСАТЬ</a>",
-          "form": {
-            "action": "mas.arefev.arefev@bk.ru",
-            "alerts": {
-              "success": "Ваш комментарий добавят в течение недели. В выходные добовляют быстрее."
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
-            "fields": {
-              "name": {
-                "visible": true,
-                "title": "Name",
-                "customTitle": "ВАШЕ ИМЯ"
+            ".title": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff",
+              "border-radius": "3px"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            "textarea.form-control": {
+              "min-height": "188px"
+            }
+          },
+          "_name": "form1",
+          "_customHTML": "<section class=\"mbr-section form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#c1c1c1\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    КОНТАКТНАЯ ФОРМА\n                </h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n                    НАПИСАТЬ НОМЕР (1-4)<br>И ЖДАТЬ (01-60) МИНУТ</h3>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"media-container-column col-lg-8\">\n                <!---Formbuilder Form--->\n                <form action=\"mas.arefev.arefev@bk.ru\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">ОЖИДАЙТЕ ОТВЕТА ОПЕРАТОРА СЕТИ \"MAXSUS\"</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md-4  form-group\" data-for=\"name\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"name\" class=\"form-control-label mbr-fonts-style\">Имя</label>\n                            <input type=\"text\" name=\"name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-4  form-group\" data-for=\"email\" hidden=\"hidden\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\" hidden=\"hidden\">Email</label>\n                            <input type=\"email\" name=\"email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" hidden=\"hidden\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-4  form-group\" hidden=\"hidden\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"phone\" class=\"form-control-label mbr-fonts-style\" hidden=\"hidden\">Телефон</label>\n                            <input type=\"tel\" name=\"phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\" hidden=\"hidden\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"message\" class=\"form-control-label mbr-fonts-style\">Сообщение</label>\n                            <textarea name=\"message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\" placeholder=\"                НАПИСАТЬ КОД(1-4) (0055), РЕКОМЕНДУЕТЬСЯ ОЗНАКОМИТЬСЯ С ТАРИФАМИ\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                            <a type=\"submit\" class=\"btn btn-primary btn-form\">ОТПРАВИТЬ</a>\n                        </div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rW9DuaYFud",
+          "_anchor": "form1-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "font-weight": "300"
+            },
+            ".mbr-content-text": {
+              "color": "#767676",
+              "margin-bottom": "0",
+              "text-align": "center"
+            },
+            ".card": {
+              "word-wrap": "break-word",
+              "flex-shrink": "0",
+              "-webkit-flex-shrink": "0"
+            },
+            ".img-text when (@bordersNumber)": {
+              "width": "(@numberSize * 2px)",
+              "height": "(@numberSize * 2px)",
+              "font-size": "~\"@{numberSize}px\"",
+              "border": "2px solid @bordersColor",
+              "border-radius": "50%",
+              "& when (@numberSize > 24px)": {
+                "@media (max-width: 991px)": {
+                  "width": "48px",
+                  "height": "48px",
+                  "font-size": "24px"
+                }
+              }
+            },
+            ".cards-block when (@showBorders)": {
+              "@media (min-width: 992px)": {
+                "border-top": "2px solid @bordersColor"
               },
-              "email": {
-                "visible": false,
-                "title": "Email",
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "visible": false,
-                "title": "Phone",
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "КОММЕНТАРИЙ"
+              ".card": {
+                "border-bottom": "2px solid @bordersColor",
+                "border-radius": "0"
+              }
+            },
+            ".cards-container": {
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "word-break": "break-word"
+            },
+            "@media (max-width: 767px)": {
+              ".panel-item": {
+                "flex-direction": "column",
+                "align-items": "center",
+                ".card-img": {
+                  "padding": "0",
+                  "padding-bottom": "1rem"
+                }
               }
             }
           },
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "form1",
-          "_anchor": "form1-4"
+          "_name": "counters5",
+          "_customHTML": "<section class=\"counters5 counters\" group=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitles\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <select title=\"Число карт\" name=\"cardsAmount\">\n           <option value=\"1\">1</option>\n           <option value=\"2\">2</option>\n           <option value=\"3\">3</option>\n           <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"range\" inline title=\"Number Size\" name=\"numberSize\" min=\"10\" max=\"50\" step=\"1\" value=\"32\">\n        \n        <input type=\"checkbox\" title=\"Show Borders Number\" name=\"bordersNumber\" checked>\n        <input type=\"checkbox\" title=\"Show Borders Card\" name=\"showBorders\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"bordersColor\" value=\"#efefef\" condition=\"showBorders\">\n        \n        <fieldset type=\"background\" name=\"bg\" parallax>\n           <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background2.jpg\">\n           <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n           <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#cccccc\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container pt-4 mt-2\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">ТАРИФЫ</h2>\n        <h3 class=\"mbr-section-subtitle pb-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">ТАРИФ&nbsp;</h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"cards-block\">\n                <div class=\"cards-container\">\n                    <div class=\"card px-3 align-left col-12\">\n                        <div class=\"panel-item p-4 d-flex\">\n                            <div class=\"card-img pr-3\">\n                                <h3 class=\"img-text d-flex align-items-center justify-content-center\" data-app-selector=\".img-text\">\n                                    1\n                                </h3>\n                            </div>\n                            <div class=\"card-text\">\n                                <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">ИНТЕРНЕТ</h4>\n                                <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n                                    ИНТЕРНЕТ СО СКОРОСТЬЮ 300-380КБ/СЕК</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card px-3 align-left col-12\" mbr-if=\"cardsAmount>1\">\n                        <div class=\"panel-item p-4 d-flex\">\n                            <div class=\"card-img pr-3\">\n                                <h3 class=\"img-text d-flex align-items-center justify-content-center\" data-app-selector=\".img-text\">\n                                    2\n                                </h3>\n                            </div>\n                            <div class=\"card-text\">\n                                <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">ПК+ИНТЕРНЕТ</h4>\n                                <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">ИНТЕРНЕТ СО СКОРОСТЬЮ 300-380КБ/СЕК, КОМПЬЮТЕР С ИГРАМИ &nbsp;(НЕДОСТУПНО!) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card px-3 align-left col-12\" mbr-if=\"cardsAmount>2\">\n                        <div class=\"panel-item p-4 d-flex\">\n                            <div class=\"card-img pr-3\">\n                                <h3 class=\"img-text d-flex align-items-center justify-content-center\" data-app-selector=\".img-text\">\n                                    3\n                                </h3>\n                            </div>\n                            <div class=\"card-text\">\n                                <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">НАУШНИКИ</h4>\n                                <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">НАУШНИКИ BLUETOOTH</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card px-3 align-left col-12\" mbr-if=\"cardsAmount>3\">\n                        <div class=\"panel-item p-4 d-flex\">\n                            <div class=\"card-img pr-3\">\n                                <h3 class=\"img-text d-flex align-items-center justify-content-center\" data-app-selector=\".img-text\">\n                                    4\n                                </h3>\n                            </div>\n                            <div class=\"card-texts\">\n                                <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">НАУШНИКИ+ИНТЕРНЕТ</h4>\n                                <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">ИНТЕРНЕТ СО СКОРОСТЬЮ 300-380КБ/СЕК, НАУШНИКИ BLUETOOTH</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rW9C2hReOm",
+          "_anchor": "counters5-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
-          "_params": {
-            "showMeta": true
-          },
-          "title": "<div>Данил 03.05.2019 17:24</div><br><div>\n</div><div>\n</div><div>Здравствуйте,можно добавить Три богатыря и морской царь<br><br><br></div>",
-          "meta": "<b>АДМИНИСТРАТОР (Максим) 17:31<br>Здравствуйте, Данил мы вскоре добавим. Наверно в 18:30 по МСК</b><br>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-1x",
+          "alias": false,
           "_styles": {
-            "B": {
-              "font-size": "15px"
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
             }
-          }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Ширина текста\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"66\">\n        <input type=\"range\" inline title=\"Ширина линии\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"84\">\n        <input type=\"color\" title=\"Цвет линии\" name=\"lineColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#2e2e2e\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text><i><b>\n                    ТОРРОНТЕЛО</b></i><br>ТАРИФ ДЛЯ: СКАЧИВАНИЯ С ТОРРЕНТ ТРЕКЕРОВ!<br>ПРИМИЧАНИЕ: ТОЛЬКО ДЛЯ ТОРРЕНТ ТРЕКЕРОВ!!!<br>КОД ТАРИФА: &nbsp; <b>0055</b></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n    </div>\n</section>",
+          "_cid": "rW9REaapX8",
+          "_anchor": "content10-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": false,
-            "bgImage": "@PROJECT_PATH@/assets/images/photo-3.jpg",
-            "parallax": true,
-            "bgColorRadio": true,
-            "bgColor": "#37383e",
-            "overlay": true,
-            "overlayColor": "#3C3C3C",
-            "overlayOpacity": 0.8
-          },
-          "logo": {
-            "image": {
-              "src": "@PROJECT_PATH@/assets/images/-265x126.png",
-              "width": 265,
-              "active": true,
-              "link": "",
-              "alt": "",
-              "title": ""
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-contacts1",
-              "link": "",
-              "size": 0
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "stroke": "@progressColor"
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "33%",
+                "flex-basis": "33%"
+              }
             }
           },
-          "text1": "<b>МИКС 2019</b><br><br>",
-          "text2": "",
-          "text3": "<ul></ul>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "contacts1",
-          "_anchor": "contacts1-3"
+          "_name": "progress-bars3",
+          "_customHTML": "<section class=\"progress-bars3\" group=\"Progress\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n       \n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"color\" title=\"Цвет\" name=\"progressColor\" value=\"#149dcc\">\n\n        <select title=\"Число\" name=\"progressCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"range\" inline title=\"Прогресс 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"80\">\n        <input type=\"range\" inline title=\"Прогресс 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"99\" condition=\"progressCount>1\">\n        <input type=\"range\" inline title=\"Прогресс 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"60\" condition=\"progressCount>2\">\n        <input type=\"range\" inline title=\"Прогресс 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"95\" condition=\"progressCount>3\">\n        <input type=\"range\" inline title=\"Прогресс 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"90\" condition=\"progressCount>4\">\n        <input type=\"range\" inline title=\"Прогресс 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>5\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">РЕНТАБИЛЬНОСТЬ</h2>\n\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"></h3>\n    \n        <div class=\"media-container-row pt-5 mt-2\">\n            <div class=\"card p-3 align-center\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">80%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        ИНТЕРНЕТ</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">100%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">ПК+ИНТЕРНЕТ</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">20%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        НАУШНИКИ</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">95%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        ТЕЛ+НАУШНИКИ</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>4\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress5\" role=\"progressbar\" data-goal=\"{{progress5}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Обучение\n                    </h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>5\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress6\" role=\"progressbar\" data-goal=\"{{progress6}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Подарки\n                    </h4>\n                </div>                 \n            </div>\n        </div>\n</div></section>",
+          "_cid": "rW9Qt1pPjo",
+          "_anchor": "progress-bars3-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     },
     "page1.html": {
       "settings": {
-        "title": "СМОТРЕТЬ МУЛЬТЫ",
-        "order": 26
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-6"
-        },
-        {
-          "_params": {
-            "showTitle": true,
-            "showName": true,
-            "showBio": false,
-            "count": "12",
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/photo-3.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
-            "bgColor": "#fff",
-            "overlay": true,
-            "overlayColor": "#222",
-            "overlayOpacity": 0.5
-          },
-          "header": "МУЛЬТЫ",
-          "items": [
-            {
-              "authorName": "<a href=\"ВСЁ О РОЗИ.html\">СМОТРЕТЬ</a>",
-              "authorBio": "",
-              "text": "<p><i>ВСЁ О РОЗИ. МУЛЬТ 6+</i></p><p><i>СПАСИБО КАНАЛУ: ТЕРЕМОК ТВ,ТЕРЕМОК KIDS</i></p>"
-            },
-            {
-              "authorName": "<a href=\"Босс Молокосос.html\">СМОТРЕТЬ</a>",
-              "authorBio": "User",
-              "text": "<p><i>МУЛЬТ ДИСНЕЙ Босс Молокосос СМОТРЕТЬ НА НАШЕМ САЙТЕ БЕСПЛАТНО&nbsp;</i></p><p><i>СПАСИБО КАНАЛУ:МУЛЬТИКИ DISNEY</i></p>"
-            },
-            {
-              "authorName": "<a href=\"МИКИ.html\">СМОТРЕТЬ</a>",
-              "authorBio": "User",
-              "text": "<p><i>МИКИ-МАУС</i></p><p><i>СПАСИБО КАНАЛУ: УЗНАВАЙКА</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page5.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>БАРБОСКИНЫ</i></p><p><i>СПАСИБО КАНАЛУ:Барбоскины</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page6.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>Мультфильм барби виртуальный мир 2017</i></p><p><i>СПАСИБО КАНАЛУ:счастливые мультики 05</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page7.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<h6><i>ЕРАЛАШ 2019 ГОДА</i></h6><h6><i>СПАСИБО КАНАЛУ Вадик Китаец</i></h6>"
-            },
-            {
-              "authorName": "<a href=\"page8.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>всё что вы хотели знать но боялись спросить</i></p><p><i>спасибо каналу:ngoc nganh KDA ,Disney - CHANNEL 2018</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page9.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>Щеняций патруль</i></p><p><i>спасибо каналу: Nick Jr. Россия&nbsp;</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page10.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "Три богатыря и морской царь"
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            },
-            {
-              "authorName": "John Smith",
-              "authorBio": "Developer",
-              "text": "<em>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae sed modi a ullam sint adipisci rerum vel praesentium voluptas deserunt veniam provident culpa sequi veritatis.”</em>"
-            }
-          ],
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "testimonials1",
-          "_anchor": "testimonials1-c",
-          "testimonial": [
-            {
-              "authorName": "<a href=\"ВСЁ О РОЗИ.html\">СМОТРЕТЬ</a>",
-              "authorBio": "",
-              "text": "<p><i>ВСЁ О РОЗИ. МУЛЬТ 6+</i></p><p><i>СПАСИБО КАНАЛУ: ТЕРЕМОК ТВ,ТЕРЕМОК KIDS</i></p>"
-            },
-            {
-              "authorName": "<a href=\"Босс Молокосос.html\">СМОТРЕТЬ</a>",
-              "authorBio": "User",
-              "text": "<p><i>МУЛЬТ ДИСНЕЙ Босс Молокосос СМОТРЕТЬ НА НАШЕМ САЙТЕ БЕСПЛАТНО&nbsp;</i></p><p><i>СПАСИБО КАНАЛУ:МУЛЬТИКИ DISNEY</i></p>"
-            },
-            {
-              "authorName": "<a href=\"МИКИ.html\">СМОТРЕТЬ</a>",
-              "authorBio": "User",
-              "text": "<p><i>МИКИ-МАУС</i></p><p><i>СПАСИБО КАНАЛУ: УЗНАВАЙКА</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page5.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>БАРБОСКИНЫ</i></p><p><i>СПАСИБО КАНАЛУ:Барбоскины</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page6.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>Мультфильм барби виртуальный мир 2017</i></p><p><i>СПАСИБО КАНАЛУ:счастливые мультики 05</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page7.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<h6><i>ЕРАЛАШ 2019 ГОДА</i></h6><h6><i>СПАСИБО КАНАЛУ Вадик Китаец</i></h6>"
-            },
-            {
-              "authorName": "<a href=\"page8.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>всё что вы хотели знать но боялись спросить</i></p><p><i>спасибо каналу:ngoc nganh KDA ,Disney - CHANNEL 2018</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page9.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p><i>Щеняций патруль</i></p><p><i>спасибо каналу: Nick Jr. Россия&nbsp;</i></p>"
-            },
-            {
-              "authorName": "<a href=\"page10.html\">СМОТРЕТЬ</a>",
-              "authorBio": "Developer",
-              "text": "<p>Три богатыря и морской царь</p><p>Три богатыря: Ход конем.</p>"
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            },
-            {
-              "authorName": "смотреть",
-              "authorBio": "Developer",
-              "text": ""
-            }
-          ]
-        }
-      ]
-    },
-    "page5.html": {
-      "settings": {
-        "title": "БАРБОСКИНЫ",
-        "order": 22
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-h"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=kG1dYVQSEe0&list=PL351A6A6C8E20147C",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-19"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=eU55FWuGJRg&list=PL351A6A6C8E20147C&index=2",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1a"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=dGDfB5QTU9E&list=PL351A6A6C8E20147C&index=3",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1b"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=me0dznNrz8Y&list=PL351A6A6C8E20147C&index=4",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1c"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=XZAOO6OO_XI&list=PL351A6A6C8E20147C&index=5",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1d"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=Ma-hLVrrTeE&list=PL351A6A6C8E20147C&index=6",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1e"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=Oz4bleifxNc&list=PL351A6A6C8E20147C&index=7",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1f"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=NvcUD8mjGFk&list=PL351A6A6C8E20147C&index=8",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1g"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=fMLoMnqvGpY&list=PL351A6A6C8E20147C&index=9",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1h"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=bshZkboSWbo&list=PL351A6A6C8E20147C&index=10",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1i"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=XhHmDGp6q8g&list=PL351A6A6C8E20147C&index=11",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1j"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=nUIvVVFxNr0&list=PL351A6A6C8E20147C&index=12",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1k"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=ZVBQ7wGrfLU&list=PL351A6A6C8E20147C&index=13",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1l"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=2vlCougpRT8&list=PL351A6A6C8E20147C&index=14",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1m"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=QAlQ0DfWjvU&list=PL351A6A6C8E20147C&index=15",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1n"
-        },
-        {
-          "_params": {
-            "showMeta": true
-          },
-          "title": "СЕРИИ 2019 ГОДА",
-          "meta": "",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-1o"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=wl6gHkJhdDo",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1p"
-        }
-      ]
-    },
-    "page6.html": {
-      "settings": {
-        "title": "барби",
-        "order": 21
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-i"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=hKkiSmcU2mY",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1r"
-        }
-      ]
-    },
-    "page7.html": {
-      "settings": {
-        "title": "Ералаш&nbsp;",
-        "order": 20
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-j"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=7S-6NeoBn8M",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1s"
-        }
-      ]
-    },
-    "page8.html": {
-      "settings": {
-        "title": "всё что вы хотели спросить",
-        "order": 19
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-k"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=l-eTOrD7fX8",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1t"
-        },
-        {
-          "_params": {
-            "showText": true
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=w_jdaxo0yLI",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1u"
-        }
-      ]
-    },
-    "page9.html": {
-      "settings": {
-        "title": "патруль",
-        "order": 18
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-l"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=ZU82K09ezeU",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1v"
-        }
-      ]
-    },
-    "page10.html": {
-      "settings": {
-        "title": "3 богатыря",
-        "order": 17
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-m"
-        },
-        {
-          "_params": {
-            "showMeta": true
-          },
-          "title": "Три богатыря и морской царь",
-          "meta": "",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-1y"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=nZr48ZBBvzI",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1z"
-        },
-        {
-          "_params": {
-            "showMeta": true
-          },
-          "title": "Три богатыря: Ход конем",
-          "meta": "",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-20"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=yYKW1DOsDE0",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-21"
-        }
-      ]
-    },
-    "page11.html": {
-      "settings": {
-        "title": "Page 11",
-        "order": 16
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-n"
-        }
-      ]
-    },
-    "page12.html": {
-      "settings": {
-        "title": "Page 12",
-        "order": 15
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-o"
-        }
-      ]
-    },
-    "page13.html": {
-      "settings": {
-        "title": "Page 13",
-        "order": 14
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-p"
-        }
-      ]
-    },
-    "page14.html": {
-      "settings": {
-        "title": "Page 14",
-        "order": 13
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-q"
-        }
-      ]
-    },
-    "page15.html": {
-      "settings": {
-        "title": "Page 15",
-        "order": 12
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-r"
-        }
-      ]
-    },
-    "page16.html": {
-      "settings": {
-        "title": "Page 16",
-        "order": 11
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-s"
-        }
-      ]
-    },
-    "page17.html": {
-      "settings": {
-        "title": "Page 17",
-        "order": 10
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-t"
-        }
-      ]
-    },
-    "page18.html": {
-      "settings": {
-        "title": "Page 18",
-        "order": 9
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-u"
-        }
-      ]
-    },
-    "page19.html": {
-      "settings": {
-        "title": "Page 19",
-        "order": 8
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-v"
-        }
-      ]
-    },
-    "page20.html": {
-      "settings": {
-        "title": "Page 20",
-        "order": 7
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-w"
-        }
-      ]
-    },
-    "page21.html": {
-      "settings": {
-        "title": "Page 21",
-        "order": 6
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-x"
-        }
-      ]
-    },
-    "page22.html": {
-      "settings": {
-        "title": "Page 22",
-        "order": 5
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-1q"
-        }
-      ]
-    },
-    "page23.html": {
-      "settings": {
-        "title": "Page 23",
-        "order": 4
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-y"
-        }
-      ]
-    },
-    "page24.html": {
-      "settings": {
-        "title": "Page 24",
-        "order": 3
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-z"
-        }
-      ]
-    },
-    "page25.html": {
-      "settings": {
-        "title": "Page 25",
+        "meta_descr": "Web Maker Description",
+        "title": "game",
         "order": 2
       },
       "components": [
         {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
+          "alias": false,
           "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-10"
-        }
-      ]
-    },
-    "Босс Молокосос.html": {
-      "settings": {
-        "title": "Босс Молокосос",
-        "order": 24
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
             },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-f"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=ycvCMVv3GqM",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-17"
-        }
-      ]
-    },
-    "ВСЁ О РОЗИ.html": {
-      "settings": {
-        "title": "ВСЁ О РОЗИ",
-        "order": 25
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
+            ".form-control, .form-control:focus": {
+              "background": "@inputBg",
+              "border": "1px solid @borderColor"
             },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-e"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=uBmRGzCDlt0",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-12"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
+            ".form-container": {
+              "transition": "all .2s",
+              "border": "1px solid @borderColor",
+              "padding": "1rem",
+              "& when (@bgForm)": {
+                "background": "linear-gradient(@formColor1, @formColor2)",
+                "border": "none"
+              }
             },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=rusiFbYEdyE",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "text": "",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-13"
-        }
-      ]
-    },
-    "МУЗЫКА.html": {
-      "settings": {
-        "title": "КАТАЛОГ МУЗЫКИ",
-        "order": 1
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
+            "textarea.form-control": {
+              "min-height": "188px"
             },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-11"
-        }
-      ]
-    },
-    "МИКИ.html": {
-      "settings": {
-        "title": "МИКИ",
-        "order": 23
-      },
-      "components": [
-        {
-          "_inherit": "menu",
-          "_params": {
-            "logo": true,
-            "showBrand": true,
-            "showButtons": true,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
-            "color": "#fff",
-            "hamburgerColor": "#000"
-          },
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".navbar-nav .btn\" href=\"https://mobirise.com\">СМОТРЕТЬ<br></a></li>",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"index.html\">ДОМОЙ&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page1.html\">КАТАЛОГ МУЛЬТОВ &nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"page26.html\">КАТАЛОГ МУЗЫКИ&nbsp;</a></li>",
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/-270x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "",
-              "title": ""
+            ".input-group-btn": {
+              "justify-content": "center",
+              "-webkit-justify-content": "center"
             },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">CATLING.TV</a>",
-          "_name": "ext.menu",
-          "_styles": {
-            ".navbar-toggler": {
-              "color": "#000"
-            }
-          },
-          "_anchor": "ext_menu-g"
-        },
-        {
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/photo-13.jpg",
-              "width": 1400
+            ".content-container when not (@reverseContent)": {
+              "@media (min-width: 768px)": {
+                "padding-right": "5rem"
+              }
             },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=R4jreYMC5Ak",
-              "autoplay": false,
-              "loop": false
+            ".row when (@reverseContent)": {
+              "flex-direction": "row-reverse",
+              "-webkit-flex-direction": "row-reverse",
+              ".content-container": {
+                "@media (min-width: 768px)": {
+                  "padding-left": "5rem"
+                }
+              }
             }
           },
-          "text": "Cut down the development time with drag-and-drop website builder.",
-          "alias": "purity/components",
-          "_tags": [
-            "Тема"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-18"
+          "_name": "header15",
+          "_customHTML": "<section class=\"header15\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Стрелка\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Input Background\" name=\"inputBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Фон формы\" name=\"bgForm\">\n        <input type=\"color\" title=\"Форма Цвет 1\" name=\"formColor1\" value=\"#ff7f9f\" condition=\"bgForm\">\n        <input type=\"color\" title=\"Форма Цвет 2\" name=\"formColor2\" value=\"#55b4d4\" condition=\"bgForm\">\n        <input type=\"checkbox\" title=\"Form On Right/Left\" name=\"reverseContent\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#073b4c\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-right\">\n        <div class=\"row\">\n            <div class=\"mbr-white col-lg-8 col-md-7 content-container\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">ВЫБЕРИТЕ ТАРИФ</h1>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ЭТО GAME МЕНЮ ВЫБЕРИТЕ<br>ТАРИФ ДЛЯ ИГРЫ ОН БЫВАЕТ ДВУХ ВИДОВ<br>1-ИГРАТЬ С ИНТРЕНТОМ<br>2- БЕЗ ИНТЕРЕНЕТА&nbsp;</p>\n            </div>\n            <div class=\"col-lg-4 col-md-5\">\n                <div class=\"form-container\">\n                    <div mbr-form class=\"media-container-column\">\n                        <!---Formbuilder Form--->\n                        <form action=\"mas.arefev.arefev@bk.ru\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                            <div class=\"row\">\n                                <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">ПРИЯТНОЙ ИГРЫ !</div>\n                                <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                                </div>\n                            </div>\n                            <div class=\"dragArea row\">\n                                <div class=\"col-md-12 form-group \" data-for=\"name\">\n                                    <input type=\"text\" name=\"name\" placeholder=\"ИМЯ ИЛИ НИКНЕЙМ\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control px-3\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"email\" hidden=\"hidden\">\n                                    <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control px-3\" hidden=\"hidden\">\n                                </div>\n                                <div data-for=\"phone\" class=\"col-md-12 form-group \" hidden=\"hidden\">\n                                    <input type=\"tel\" name=\"phone\" placeholder=\"Phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control px-3\" hidden=\"hidden\">\n                                </div>\n                                <div data-for=\"message\" class=\"col-md-12 form-group \">\n                                    <textarea name=\"message\" placeholder=\"1 ИЛИ 2?\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control px-3\"></textarea>\n                                </div>\n                                <div class=\"col-md-12 input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                                    <a type=\"submit\" class=\"btn btn-secondary btn-form\">ОТПРАВИТЬ</a>\n                                </div>\n                            </div>\n                        </form><!---Formbuilder Form--->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rWehT6ZvET",
+          "_anchor": "header15-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     }
